@@ -10,6 +10,7 @@ Feature: test feature
         When user clicks login button
         Then user should see the logged in page
 
+    @test
     Scenario: User can't be logged in successfully
         When user enters username as "ortonifail"
         When user enters password as "pass1234"

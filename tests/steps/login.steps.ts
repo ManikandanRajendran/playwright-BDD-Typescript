@@ -3,10 +3,11 @@ import {expect} from "@playwright/test"
 
 import { pageFixture } from "../../hooks/pageFixture";
 
+
 setDefaultTimeout(20 * 1000 * 2);
 
 Given("Navigate to the Bookcart homepage", async function () {
-    await pageFixture.page.goto("https://bookcart.azurewebsites.net/")
+    await pageFixture.page.goto(process.env.BASEURL)
 });
 
 When("user clicks on login link", async function () {

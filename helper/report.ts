@@ -1,8 +1,12 @@
 const report = require("multiple-cucumber-html-reporter");
 
+
+/**
+ * @generator This is config of report generation
+ */
 report.generate({
   jsonDir: "test-results",
-  reportPath: "./",
+  reportPath: "test-results/reports/",
   reportName: "Playwright Automation Report",
   displayDuration: true,
   metadata: {
